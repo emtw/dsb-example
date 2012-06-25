@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+		<title>DSB Welding &amp; Sheet Metal Services Ltd | Sheet Metal Fabrication | Redditch</title>
+
+	<!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="styleie.css" />
+	<link rel="stylesheet" href="bootstrap.css" type="text/css" />
+	<![endif]-->
+	<!--[if !IE]><!-->
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="bootstrap.css" type="text/css" />
+	<script src="css_browser_selector.js" type="text/javascript"></script>
+	 <!--<![endif]-->
+	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+	<script>
+$(document).ready(function(){
+	
+	function randomPicture1() {
+		var min=1;
+		var max=4;
+		var picture=Math.floor(Math.random()*(max-min+1))+min;
+		return picture;
+	};
+	
+	function randomPicture2() {
+		var min=5;
+		var max=8;
+		var picture=Math.floor(Math.random()*(max-min+1))+min;
+		return picture;
+	};
+	
+	function randomPicture3() {
+		var min=9;
+		var max=12;
+		var picture=Math.floor(Math.random()*(max-min+1))+min;
+		return picture;
+	};
+
+	function bannerDisplaya(){
+		$("#banner-a").fadeOut(2000,function(){
+			var img = new Image()
+			var imageSrc = "images/slideshow/"+randomPicture1()+".jpg";
+			$(img).load(function(){
+				$("#banner-a").html('').append($(this)).fadeIn(1000);
+			}).attr('src', imageSrc);
+		})
+	};
+	
+	bannerDisplaya();
+	window.setInterval(bannerDisplaya, 6000);
+	
+	function bannerDisplayb(){
+		$("#banner-b").fadeOut(2000,function(){
+			var img = new Image()
+			var imageSrc = "images/slideshow/"+randomPicture2()+".jpg";
+			$(img).load(function(){
+				$("#banner-b").html('').append($(this)).fadeIn(1000);
+			}).attr('src', imageSrc);
+		})
+	}
+	
+	bannerDisplayb();
+	window.setInterval(bannerDisplayb, 6000);
+	
+	function bannerDisplayc(){
+		$("#banner-c").fadeOut(2000,function(){
+			var img = new Image()
+			var imageSrc = "images/slideshow/"+randomPicture3()+".jpg";
+			$(img).load(function(){
+				$("#banner-c").html('').append($(this)).fadeIn(1000);
+			}).attr('src', imageSrc);
+		})
+	}
+	
+	bannerDisplayc();
+	window.setInterval(bannerDisplayc, 6000);
+})
+	
+
+</script>
+	
+	</head>
+
+	<body>
+		<div id="content">
+			<div id="title" class="wrapper shadow">
+				<img src="images/dsblogo.png" id="logo" width="400" height="200" alt="DSB Welding and Sheet Metal Services" />
+				<div class="float-right">
+					<h2>DSB Welding &amp; Sheet Metal Services</h2>
+					<p class="reduce-line-height">Unit 8, Victor Business Centre</p>
+					<p class="reduce-line-height">Arthur Street, Lakeside</p>
+					<p class="reduce-line-height">Redditch, Worcs, B98 8JY</p>
+					<p class="reduce-line-height bold">Tel: (01527) 510041</p>
+					<p class="reduce-line-height bold"> Fax: (01527) 515445</p>
+				</div>
+			</div>
+			<div id="products-blank">
+				<div id="nav" class="wrapper shadow">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="services.html">Services</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>							
+			</div>
+			<div id="services-box">
+				<ul>
+					<li><a href="services.html">Main</a></li>
+					<li><a href="about/fabrication.html">Fabrication</a></li>
+					<li><a href="about/welding.html">Welding</a></li>
+					<li><a href="about/plasma.html">Plasma</a></li>
+					<li><a href="about/machines.html">Machines</a></li>
+				</ul>
+			</div>
+			<div id ="content-box" class="wrapper shadow">
+				<div class="whole-box">
+				<h1>Our Services</h1>	
+					<div id="banner-wrapper">
+						<div class="banner" id="banner-a">
+							<img src="images/slideshow/1.jpg" alt="Sheet Metal Fabrication at DSB Welding and Sheet Metal Services"/>
+						</div>
+						<div class="banner" id="banner-b">
+							<img src="images/slideshow/5.jpg" alt="Sheet Metal Fabrication at DSB Welding and Sheet Metal Services"/>
+						</div>
+						<div class="banner" id="banner-c">
+							<img src="images/slideshow/9.jpg" alt="Sheet Metal Fabrication at DSB Welding and Sheet Metal Services"/>
+						</div>
+					</div>
+					<div class="section">
+						<h2>Information</h2>
+						<p>General information about the services would go here - specialities of the company and what particular products you can fabricate. Also mention any additional services, for example AutoCAD. You could also mention recent products you've created - e.g. specific custom panels etc.</p>
+						<p>The gallery above is a random image generator - once you have more images referenced in the code, it will display a greater range of pictures, with less chance of repetition. It is also possible to change this to cycling through a list of images. However, if the generation is random, you get a much bigger range of combinations.</p>
+					</div>
+				</div>		
+			</div>
+			<div id="copyright" class="wrapper shadow footer">
+				<p>© 2012 <a href="http://twistx.co.uk">Twist X Web Design</a></p>
+			</div>
+		</div>
+	</body>
+</html>
